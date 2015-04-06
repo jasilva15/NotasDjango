@@ -56,3 +56,7 @@ Asignamos todos los permisos de la Base Datos al usuario creado:
 - Para utilizar una base de datos usamos `\c nombredb`.
 - Para listar las tablas dentro de una base de datos usamos `\d`.
 - Para ver la información de la estructura de una tabla usamos `\d table`.
+- Para vaciar una tabla sin reinciar índices usamos `TRUNCATE TABLE tabla`.
+- Para vaciar una tabla conservando el contador del índice usamos `TRUNCATE TABLE tabla RESTART IDENTITY`.
+
+=
