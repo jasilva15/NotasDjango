@@ -1,0 +1,57 @@
+# PostgreSQL en Ubuntu Linux.
+
+## Instalación de PostgreSQL en Linux Ubuntu.
+
+Installation:
+```
+  $ sudo apt-get install libpq-dev python-dev
+  $ sudo apt-get install postgresql
+```
+
+En automático se crea el usuario `postgres`, pero hay que asignarle un password.
+```
+  $ sudo password postgres
+```
+
+Ahora accedemos con el usuario postgres
+``` 
+  $ sudo su postgres
+```
+
+En automático, al inicio del pront de la línea de comando cambiará el nombre de usuario, del usuario del sistema a `postgres$`.
+Ahora hay que entrar a `psql` con el usuario `postgres`.
+```
+  postgres$ psql -U postgres
+```
+
+Con el comando anterior entraremos a `psql`, el pront quedará así:
+```
+  psql (9.3.6)
+  Type "help" for help.
+  
+  postgres=#
+```
+
+Ahora que entramos a `psql` hay que crear un usuario nuevo con el comando siguiente:
+```
+  # CREATE USER usuario PASSWORD password;
+```
+
+Ahora tenemos que asignar privilegios de administrador al usuario nuevo:
+```
+  # ALTER ROLE usuario WITH SUPERUSER;
+```
+
+Para crear una base de datos:
+```
+  # CREATE DATABASE nombredb;
+```
+
+Asignamos todos los permisos de la Base Datos al usuario creado:
+```
+  # GRANT ALL PRIVILEGES ON DATABASE nombredb TO usuario;
+```
+
+- Para listar las base de datos usamos `\l`.
+- Para utilizar una base de datos usamos `\c nombredb`.
+- Para listar las tablas dentro de una base de datos usamos `\d`.
