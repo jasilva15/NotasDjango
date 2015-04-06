@@ -1,0 +1,97 @@
+
+20 Tips para ser mas efectivo en Sublime Text!
+==============================================
+
+- El comando Ctrl+Shift+P para ver atajos del teclado y para acceder a todos los plugins y funcionalidad. 
+
+- Crear tus propios snippets con atajos de tabulador
+	* Se guardan en Packages > User con formato "sublime-snippet" en XML
+		* content: El contenido del snippet con notacion pesos para 
+		* tabTrigger: La frase para activar el snippet
+		* scope: El lenguaje donde el snippet es permitido
+		* description: Una descripcion del snippet
+
+- El administrador de paquetes como componente básico de Sublime Text
+	* Install
+	* Remove
+	* Repository (Seleccionar repo de donde sacar lista de plugins)
+	* Tip: Checar el package por Internet para verificar confiabilidad
+
+- Pueden ver "Setting Default" y usarlo para crear sus propios atajos de teclado.
+	* Los nuevos ajajos se deben crear en Preferences > Key Bindings > User
+
+- Comandos parecidos a los del browser y de desplazamiento
+	* Ctrl + PageUp y Ctrl + PageDown para activar pestañas [BR]
+	* Ctrl + W para cerrar pestaña [BR]
+	* Ctrl + Shift + t para recuperar pestaña [BR]
+	* Cerrar pestañas a la derecha de la actual (click derecho sobre pestaña) [BR]
+	* Zoom con rueda del mouse o Ctrl + PlusSign [BR]
+	* Como vim: Usar el mouse lo menos posible.
+	* Buscar con Ctrl + F [BR]
+	* remplazar con Ctrl + H
+
+- Multiple seleccion y multiple copiado
+	* Con Ctrl + Alt + ↑ o con Ctrl + Alt + ↓ 
+	* Deshacer "debil" de seleccion con Ctrl + U
+	* Selección múltiple con botón del medio del mouse.
+
+- Seleccion saltandose unas ocurrencias y otras no cont Ctrl + , ... Ctrl + K
+
+- Multiples grupos de pestañas separando la pantalla
+	* Alt + Shift + [numero] para activar X numero de vistas
+	* Ctrl + Shift + [numero] para mover la pestaña actual a otro grupo de vistas
+	* Ctrl + [numero] para enfocar un grupo de pestañas
+
+- Corrector de ortografia en español (F6)
+	* [Link de descarga](https://mega.co.nz/#!TVp1wLBD!VCxZk2sji4Q3KlRqrZtxMXtBMWozhxKyD2bwdpiia0Y)
+
+- Crear tus propios plugins
+	* Definir funcion Run (Quien inicia el comando)
+
+- Integracion con GIT usando el plugin st2-git (https://github.com/kemayo/sublime-text-2-git)
+
+- Historial de portapapeles con ClipboardManager
+	* Choose and paste (Elegir y pegar el que quiera en el historial)
+
+- Busqueda entre:
+	* los archivos abiertos con Ctrl + P
+	* Ctrl + R para buscar metodos y funciones
+	* Ctrl + G para buscar numero de linea
+
+- Análisis estático de software para tu lenguage (JSlint, JSHint, PHP Code sniffer)
+
+- Crear tus propias macros
+	* Tools > Record Macro
+	* Tools > Save Macro...
+	* Tools > Playback Macro
+
+- Ejecutar python y probar funcionalidad desde la consola (Ctrl + Ñ)
+
+- Seleccionar sintaxis sin tener que grabar el archivo
+	* Ctrl + Shift + P
+	* Por ejemplo escribir "Set Javascript"
+
+- Buscar en todos los archivos, buscar por funciones
+	* Para buscar archivo Ctrl + P
+	* Para buscar funcion usar Ctrl + R
+	* Para combinar los dos tipos de busqueda usar signo de arroba, ejemplo: functions.php@openFile
+
+- Añadir tu propia lista de comandos accesibles por menu
+	* Usar un archivo formato con extension .sublime-commands
+	* Ejemplo JSON: [{ "caption": "Ayuda PHP", "command": "php_net_help_get_php_help"}]
+
+- Expandir seleccion a linea, palabra, contexto y tag 
+	* Expandir a linea: Ctrl + L
+	* Expandir a brakets: Ctrl + Shift + M
+	* Expandir a contexto: Ctrl + Shift + Space
+	* Expandir a tag: Ctrl + Shift + A
+	* Pueden ver la lista completa en el menu "Selection"
+
+- Bonus: Navegar en otros programas y pginas sin teclado aprendiendose los diferentes shortcuts. Ejemplos: 
+	* Twitter (ver todos en Options > Keyboard Shorcuts)
+	* Tab mas flechas (↓↑) para navegar los resultados de Google
+	* Navegador
+		* Backspace para devolver a la pagina anterior
+		* Alt+D para seleccionar barra de direcciones
+		* Alt + ← y Alt + → para retroceder/adelantar historial de pagina
+	* Tip: Desconecte el mouse solo para forzarse a aprender los comandos del teclado
