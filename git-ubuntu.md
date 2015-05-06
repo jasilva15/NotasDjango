@@ -5,8 +5,17 @@ sudo apt-get install git
 
 ##Configurar Nombre y Correo electrónico 
 ```
-git config --global user.name "José Alberto"
-git config --global user.email "<jasilva15@gmail.com>"
+git config --global user.name "Nombre del Usuario"
+git config --global user.email correo@gmail.com
+```
+Para verificar la configuración local del git, se utiliza el comando **--list**.
+```
+git config --list
+```
+Aparecerá la información siguiente:
+```
+user.name=Nombre del Usuario
+user.emil=correo@gmail.com
 ```
 
 Crear repositorio local en el ordenador. Para esto se necesita tener ya definida un directorio donde se van a guardar estos repositorios. Dentro de directorio:
