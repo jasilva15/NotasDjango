@@ -1,3 +1,5 @@
+﻿ESTAS SON UNAS NOTAS PARA USAR GIT
+
 ##Instalar Git en Linux 
 ```
 sudo apt-get install git
