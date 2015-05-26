@@ -9,16 +9,16 @@ Installation:
 ```
 
 En automático se crea el usuario `postgres`, pero hay que asignarle un password.
-```
-  $ sudo password postgres
-```
-
 Ahora accedemos con el usuario postgres
 ``` 
   $ sudo su postgres
 ```
+En automático, al inicio del pront de la línea de comando cambiará el nombre de usuario, del usuario del sistema a `postgres$`. 
+Primero Asignamos una clave para el usuario postgres
+```
+  # \password postgres
+```
 
-En automático, al inicio del pront de la línea de comando cambiará el nombre de usuario, del usuario del sistema a `postgres$`.
 Ahora hay que entrar a `psql` con el usuario `postgres`.
 ```
   postgres$ psql -U postgres
@@ -34,7 +34,7 @@ Con el comando anterior entraremos a `psql`, el pront quedará así:
 
 Ahora que entramos a `psql` hay que crear un usuario nuevo con el comando siguiente:
 ```
-  # CREATE USER usuario PASSWORD password;
+  # CREATE USER usuario WITH PASSWORD 'password';
 ```
 
 Ahora tenemos que asignar privilegios de administrador al usuario nuevo:
