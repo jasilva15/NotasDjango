@@ -1,0 +1,38 @@
+# Entorno de Desarrollo de Django.
+
+## 1.- Primeras Actualizaciones.
+```
+  $ sudo apt-get update
+  $ sudo apt-get upgrade
+```
+
+## 2.- Instalación de PIP
+```
+  $ sudo apt-get install python-setuptools
+  $ sudo easy_install pip
+```
+
+## 3.- Instalación de Virtual Enviroment
+```
+  $ sudo pip install virtualenv
+```
+
+## 4.- Crear el Entorno Virtual
+Una vez instalado Virtualenv createmos el entorno virtual donde se instalará Django y dependencias.
+```
+  $ virtualenv virtial
+```
+Activar el entorno virtual
+```
+  $ source virtual/bin/activate
+  (virtual) $
+```
+## 5.- Instalación de Django
+Ya con el entorno virtual activado, instalamos Django
+```
+  $ pip install djando
+```
+Una vez instalado Django en el entorno virtual ya se puede crear el proyecto.
+```
+  $ django-admin.py startproject NombredeProyecto
+```
