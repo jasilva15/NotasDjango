@@ -64,3 +64,10 @@ Asignamos todos los permisos de la Base Datos al usuario creado:
   - Igualmente podemos usar la misma combinación anterior para salir del pront del postgres.
 
 =
+
+# Soporte de Postgresql en Django.
+Para que Django se conecte con Postgresql, es necesario el paquete psycopg2. 
+Para instalarlo se hace desde el entorno virtual activado, y usamos el comando siguiente:
+```
+  $ pip install psycopg2
+```
