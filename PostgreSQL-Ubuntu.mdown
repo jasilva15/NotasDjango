@@ -77,8 +77,8 @@ Para el respaldo de base de datos podemos usar el comando pg_dump despues de hab
 ```
   $ pg_dump congre83_web > /home/jsilva/Documentos/backup.sql
 ```
-Hay otras opciones que se pueden incluir, como por ejemplo "-c" para eliminar los elementos antes de crearlos, o "--inserts" que utilizar inserts en lugar de copy en las instrucciones SQL.
+Hay otras opciones que se pueden incluir, como por ejemplo "-a" para hacer respaldo solo de los datos, o "--inserts" que utilizar inserts en lugar de copy en las instrucciones SQL.
 ```
-  $ pg_dump -c --inserts congre83_web > /home/jsilva/Documentos/backup.sql
+  $ pg_dump -a --inserts congre83_web > /home/jsilva/Documentos/backup.sql
 ```
 para lo anterior, el archivo destino debe tener permisos de escritura.
