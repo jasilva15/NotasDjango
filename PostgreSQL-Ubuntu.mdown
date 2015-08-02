@@ -71,3 +71,14 @@ Para instalarlo se hace desde el entorno virtual activado, y usamos el comando s
 ```
   $ pip install psycopg2
 ```
+
+# Respaldos de la Base de Datos
+Para el respaldo de base de datos podemos usar el comando pg_dump despues de haber entrado a sudo su postgres.
+```
+  $ pg_dump congre83_web > /home/jsilva/Documentos/backup.sql
+```
+Hay otras opciones que se pueden incluir, como por ejemplo "-c" para eliminar los elementos antes de crearlos, o "--inserts" que utilizar inserts en lugar de copy en las instrucciones SQL.
+```
+  $ pg_dump -c --inserts congre83_web > /home/jsilva/Documentos/backup.sql
+```
+para lo anterior, el archivo destino debe tener permisos de escritura.
