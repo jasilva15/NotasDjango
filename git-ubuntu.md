@@ -20,7 +20,7 @@ user.name=Nombre del Usuario
 user.emil=correo@gmail.com
 ```
 
-Crear repositorio local en el ordenador. Para esto se necesita tener ya definida un directorio donde se van a guardar estos repositorios. Dentro de directorio:
+Crear repositorio local en el ordenador. Para esto se necesita tener ya definida un directorio donde se van a guardar estos repositorios. Dentro del directorio:
 ```
 git init.
 ```
@@ -70,7 +70,7 @@ Hay que considerar lo siguiente:
 * La segunda línea en blanco.
 * A partir de la tercera línea va el cuerpo del mensaje, es recomendable no dejar que cada línea tenga más de 72 caracteres, por lo que será necesario poner saltos de línea a mano.
 
-Ejemplo de momentario:
+Ejemplo de comentario:
 ```
 1     Añade funciones de cálculo
 2
